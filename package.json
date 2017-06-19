@@ -1,0 +1,20 @@
+{
+  "name": "512_bot",
+  "version": "1.0.0",
+  "description": "a twitter bot for the 512 goons gaming account used to tweet out gaming news and vids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "keywords": [
+    "gaming",
+    "twitter",
+    "512"
+  ],
+  "author": "Gabe Amaya",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.9"
+  }
+}
