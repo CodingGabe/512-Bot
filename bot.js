@@ -11,7 +11,7 @@ var stream = T.stream('user');
 stream.on('follow', followed);
 
 tweetIt();
-// setInterval(tweetIt, 1000*60)
+setInterval(tweetIt, 1000*60*60*168) // Set to tweet once a week when I stream
 
 // function to post a tweet when called
 function tweetIt() {
