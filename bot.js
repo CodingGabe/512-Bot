@@ -10,10 +10,13 @@ var stream = T.stream('user');
 // if someone follows me
 stream.on('follow', followed);
 
-// function to post a tweet when called 
+tweetIt();
+// setInterval(tweetIt, 1000*60)
+
+// function to post a tweet when called
 function tweetIt() {
   var tweet = {
-    status: 'Check us out every Wednesday night at 7pm CST. #512goons'
+    status: 'Streaming live now! Check us out https://mixer.com/GABEthaGOON #512goons #SupportSmallStreamers'
   }
   T.post('statuses/update', tweet, tweeted);
   function tweeted(err, data, response) {
